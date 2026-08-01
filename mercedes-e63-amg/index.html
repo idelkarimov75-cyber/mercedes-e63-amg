@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes-AMG E63 S 4MATIC+</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">AMG</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Главная</a></li>
+                <li><a href="#specs">Характеристики</a></li>
+                <li><a href="#model">3D Модель</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Mercedes-AMG E63 S 4MATIC+</h1>
+            <p class="tagline">Мощь, элегантность и инновации</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <h3>612</h3>
+                    <p>л.с.</p>
+                </div>
+                <div class="stat">
+                    <h3>3.4</h3>
+                    <p>сек до 100 км/ч</p>
+                </div>
+                <div class="stat">
+                    <h3>850</h3>
+                    <p>Нм крутящего момента</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="specs" class="specs">
+        <div class="container">
+            <h2>Технические характеристики</h2>
+            <div class="specs-grid">
+                <div class="spec-card">
+                    <h3>Двигатель</h3>
+                    <ul>
+                        <li>V8 4.0L Biturbo</li>
+                        <li>Мощность: 612 л.с.</li>
+                        <li>Момент: 850 Нм</li>
+                        <li>AMG SPEEDSHIFT MCT 9G</li>
+                    </ul>
+                </div>
+                <div class="spec-card">
+                    <h3>Динамика</h3>
+                    <ul>
+                        <li>0-100 км/ч: 3.4 сек</li>
+                        <li>Макс. скорость: 300 км/ч</li>
+                        <li>Привод: 4MATIC+</li>
+                        <li>Дрифт-режим</li>
+                    </ul>
+                </div>
+                <div class="spec-card">
+                    <h3>Шасси</h3>
+                    <ul>
+                        <li>AMG RIDE CONTROL+</li>
+                        <li>Адаптивная подвеска</li>
+                        <li>Керамические тормоза</li>
+                        <li>Задняя ось с управлением</li>
+                    </ul>
+                </div>
+                <div class="spec-card">
+                    <h3>Интерьер</h3>
+                    <ul>
+                        <li>MBUX система</li>
+                        <li>AMG Performance сиденья</li>
+                        <li>Burmester звук</li>
+                        <li>Кожа Nappa/Алькантара</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="model" class="model-section">
+        <div class="container">
+            <h2>3D Модель Mercedes-AMG E63</h2>
+            <div class="model-viewer">
+                <canvas id="carCanvas"></canvas>
+                <div class="model-controls">
+                    <button id="rotateBtn">Вращение</button>
+                    <button id="colorBtn">Изменить цвет</button>
+                    <button id="resetBtn">Сброс</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Галерея</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="front.jpg" alt="Mercedes-AMG E63 S - Вид спереди">
+                </div>
+                <div class="gallery-item">
+                    <img src="side.jpg" alt="Mercedes-AMG E63 S - Вид сбоку">
+                </div>
+                <div class="gallery-item">
+                    <img src="interior.jpg" alt="Mercedes-AMG E63 S - Интерьер">
+                </div>
+                <div class="gallery-item">
+                    <img src="engine.jpg" alt="Mercedes-AMG E63 S - Двигатель V8">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Mercedes-AMG. Информационный сайт о E63 S 4MATIC+</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/OBJLoader.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

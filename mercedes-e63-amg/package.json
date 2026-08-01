@@ -1,0 +1,12 @@
+{
+  "name": "mercedes-e63-amg-site",
+  "version": "1.0.0",
+  "description": "Сайт с информацией и 3D моделью Mercedes-AMG E63 S",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["mercedes", "e63", "amg", "3d"],
+  "author": "",
+  "license": "ISC"
+}
